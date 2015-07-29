@@ -45,7 +45,7 @@ describe('Controller: TodoController', function () {
     it('should add a todo to the todo list', function () {
       ctrl.addTodo(mockUserInput[0]);
       expect(ctrl.todoList.length).toEqual(1);
-    })
-  })
+    });
+  });
 
 });
