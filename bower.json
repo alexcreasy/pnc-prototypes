@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "dependencies": {
     "angular": "^1.3.0",
+    "patternfly": "1.1.4",
+    "angular-patternfly": "patternfly/angular-patternfly#v0.0.5",
     "bootstrap-sass-official": "^3.2.0",
     "angular-aria": "^1.3.0",
     "angular-resource": "^1.3.0",

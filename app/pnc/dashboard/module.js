@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('pnc.home', [
+    .module('pnc.dashboard', [
       'ui.router',
     ]);
 

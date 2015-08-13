@@ -24,6 +24,9 @@ module.exports = function(config) {
       // bower:js
       'bower_components/jquery/dist/jquery.js',
       'bower_components/angular/angular.js',
+      'bower_components/patternfly/dist/js/patternfly.js',
+      'bower_components/angular-patternfly/dist/angular-patternfly.js',
+      'bower_components/angular-patternfly/dist/angular-patternfly.min.js',
       'bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js',
       'bower_components/angular-aria/angular-aria.js',
       'bower_components/angular-resource/angular-resource.js',

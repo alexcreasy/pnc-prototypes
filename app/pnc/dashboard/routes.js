@@ -2,16 +2,16 @@
   'use strict';
 
   angular
-    .module('pnc.home')
+    .module('pnc.dashboard')
       .config(routes);
 
   function routes($stateProvider) {
-    $stateProvider.state('pnc.home', {
+    $stateProvider.state('pnc.dashboard', {
       url: '/',
       views: {
         'content@pnc': {
-          templateUrl: 'pnc/home/home.html',
-          controller: 'HomeController',
+          templateUrl: 'pnc/dashboard/dashboard.html',
+          controller: 'DashboardController',
           controllerAs: 'vm'
         }
       }

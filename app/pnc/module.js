@@ -5,7 +5,7 @@
     .module('pnc', [
       'ui.router',
       'pnc.header',
-      'pnc.home',
+      'pnc.dashboard',
       'pnc.todo'
     ])
     .config(config)
