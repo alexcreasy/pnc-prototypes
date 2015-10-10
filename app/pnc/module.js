@@ -6,6 +6,7 @@
       'ui.router',
       'pnc.header',
       'pnc.dashboard',
+      'pnc.qe',
       'pnc.todo'
     ])
     .config(config)
