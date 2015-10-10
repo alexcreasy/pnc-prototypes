@@ -4,6 +4,7 @@
   angular
     .module('pnc', [
       'ui.router',
+      'pnc.common',
       'pnc.header',
       'pnc.dashboard',
       'pnc.qe',

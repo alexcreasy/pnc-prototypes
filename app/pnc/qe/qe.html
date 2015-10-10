@@ -1,10 +1,16 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12">
-      <div class="page-header">
+      <!-- <div class="page-header">
         <h1>Quality Engineering Handover</h1>
-      </div>
-      <div>
+      </div> -->
+      <pnc-header>
+        <pnc-header-title>{{ vm.product }} {{ vm.version }} {{ vm.milestone }}</pnc-header-title>
+        <pnc-header-buttons>
+          <button class="btn btn-lg btn-success">Pass</button>
+          <button class="btn btn-lg btn-danger">Fail</button>
+        </pnc-header-buttons>
+      </pnc-header>
 
         <div class="row">
           <div class="col-md-12 col-lg-6">
@@ -52,7 +58,9 @@
           </div>
         </div><!-- /row -->
         <div class="row">
-          <div class="col-md-12" ui-view="tab-content">
+          <div class="col-md-12">
+            <div class="dashboard-row-2" style="border-width: 0px 1px 1px; border-style: solid; border-color: #dddddd; padding: 15px;" ui-view="tab-content">
+            </div>
           </div>
         </div>
       </div>
