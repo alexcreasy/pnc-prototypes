@@ -43,15 +43,18 @@
         <div class="row">
           <div class="col-md-12">
             <ul class="nav nav-tabs">
-              <li class="active"><a href="#">Binaries</a></li>
-              <li><a href="#">Components</a></li>
-              <li><a href="#">PVT Output</a></li>
-              <li><a href="#">Process Log</a></li>
-              <li><a href="#">Issues Fixed</a></li>
+              <li ui-sref-active="active"><a ui-sref="pnc.qe.binaries" href>Binaries</a></li>
+              <li ui-sref-active="active"><a ui-sref="pnc.qe.components" href>Components</a></li>
+              <li ui-sref-active="active"><a ui-sref="pnc.qe.pvt" href>PVT Output</a></li>
+              <li ui-sref-active="active"><a ui-sref="pnc.qe.process"  href>Process Log</a></li>
+              <li ui-sref-active="active"><a ui-sref="pnc.qe.issues"  href>Issues Fixed</a></li>
             </ul>
           </div>
         </div><!-- /row -->
-
+        <div class="row">
+          <div class="col-md-12" ui-view="tab-content">
+          </div>
+        </div>
       </div>
     </div>
   </div>
