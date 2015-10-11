@@ -1,3 +1,38 @@
-<div>
-  <p>{{ vm.content }}</p>
+<div class="row">
+  <div class="col-lg-8">
+    <uib-accordion>
+      <uib-accordion-group ng-repeat="component in vm.components">
+        <uib-accordion-heading>
+          {{ component.buildConfiguration.name }} <pnc-alert-icon class="fa-lg pull-right" pnc-status="component.qeStatus"></li>
+        </uib-accordion-heading>
+        <div class="row">
+          <div class="col-md-6 col-lg-6">
+            <div class="panel panel-default dashboard-row-1">
+              <div class="panel-heading">
+                <h3 class="panel-title">Build Configuration</h3>
+              </div>
+              <div class="panel-body">
+                <dl class="dl-horizontal">
+                  <dt>SCM URL:</dt>
+                  <dd><a ng-href="{{ component.buildConfiguration.scmUrl }}">{{ component.buildConfiguration.scmUrl }}</a></dd>
+                  <dt>Build Environment:</dt>
+                  <dd>{{ component.buildConfiguration.buildEnvironment }}</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6">
+            <div class="panel panel-default dashboard-row-1">
+              <div class="panel-heading">
+                <h3 class="panel-title">QA Checks</h3>
+              </div>
+              <ul class="list-group">
+                <li class="list-group-item" ng-repeat="check in component.qeChecks">{{ check.name }} <pnc-alert-icon class="fa-lg pull-right" pnc-status="check.passed ? 'success' : 'danger'"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </uib-accordion-group>
+    </uib-accordian>
+  </div>
 </div>

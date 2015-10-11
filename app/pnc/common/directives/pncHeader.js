@@ -1,7 +1,6 @@
-'use strict';
-
 (function() {
-
+  'use strict';
+  
   angular
     .module('pnc.common.directives')
       .directive('pncHeader', pncHeader);
