@@ -2,9 +2,17 @@
   'use strict';
 
   var data = {
-    product: 'JBoss Fuse',
-    version: '6.2.1',
-    milestone: 'ER1'
+    product: {
+      name: 'JBoss Fuse'
+    },
+    version: {
+      version: '6.2.1'
+    },
+    milestone: {
+      name: 'ER1',
+      startDate: '2015/09/09',
+      plannedReleaseDate: '2016/01/20'
+    }
   };
 
 

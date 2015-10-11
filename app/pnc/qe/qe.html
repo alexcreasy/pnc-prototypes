@@ -5,26 +5,34 @@
         <h1>Quality Engineering Handover</h1>
       </div> -->
       <pnc-header>
-        <pnc-header-title>{{ vm.product }} {{ vm.version }} {{ vm.milestone }}</pnc-header-title>
+        <pnc-header-title>{{ vm.product.name }} {{ vm.version.version }} {{ vm.milestone.name }}</pnc-header-title>
         <pnc-header-buttons>
-          <button class="btn btn-lg btn-success">Pass</button>
-          <button class="btn btn-lg btn-danger">Fail</button>
+          <button class="btn btn-lg btn-success">Testing Passed</button>
+          <button class="btn btn-lg btn-danger">Testing Failed</button>
         </pnc-header-buttons>
       </pnc-header>
+    </div>
+  </div>
 
         <div class="row">
           <div class="col-md-12 col-lg-6">
             <div class="panel panel-default dashboard-row-1">
               <div class="panel-heading">
-                <h3 class="panel-title">Build Information</h3>
+                <h3 class="panel-title">Milestone Details</h3>
               </div>
               <div class="panel-body">
-                <p><strong>Build Information</strong></p>
-                <ul>
-                  <li>Product Info</li>
-                  <li>Milestones</li>
-                  <li>Release dates</li>
-                </ul>
+                <dl class="dl-horizontal">
+                  <dt>Milestone:</dt>
+                  <dd>{{ vm.milestone.name }}</dd>
+                  <dt>Start Date:</dt>
+                  <dd>{{ vm.milestone.startDate }}</dd>
+                  <dt>Release Date:</dt>
+                  <dd>{{ vm.milestone.plannedReleaseDate }}</dd>
+                  <dt>Other Key:</dt>
+                  <dd>Other Value</dd>
+                  <dt>Other Key:</dt>
+                  <dd>Other Value</dd>
+                </dl>
               </div>
             </div>
           </div>
@@ -34,7 +42,6 @@
                 <h3 class="panel-title">Build Instructions</h3>
               </div>
               <div class="panel-body">
-                <p><strong>Instuctions for QE:</strong></p>
                 <ul>
                   <li>How to install</li>
                   <li>How to patch</li>

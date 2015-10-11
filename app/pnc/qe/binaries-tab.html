@@ -1,3 +1,14 @@
 <div>
-  <p>{{ vm.content }}</p>
+  <table class="table table-striped">
+    <thead>
+      <th>Artifact</th>
+      <th>Download</th>
+    </thead>
+    <tbody>
+      <tr ng-repeat="binary in vm.binaries">
+        <td>{{ binary.artifact }}</td>
+        <td><a href>Download</a></td>
+      </tr>
+    </tbody>
+  </table>
 </div>
